@@ -1,10 +1,15 @@
+import { BrowserRouter as Router, Routes } from "react-router-dom";
+import { AdminRoutes } from "./admin/adminroutes";
+import { FrontendRoutes } from "./frontend/frontendroutes";
+
 function App() {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-green-600">
-        Grocery App + Tailwind CSS 💚
-      </h1>
-    </div>
+    <Router>
+      <Routes>
+        {FrontendRoutes}
+        {AdminRoutes}
+      </Routes>
+    </Router>
   );
 }
 
