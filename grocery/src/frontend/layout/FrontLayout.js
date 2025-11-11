@@ -1,25 +1,19 @@
-import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import Header from "../layout/navbar/Header";
+import Footer from "../layout/navbar/Footer";
 
-export default function FrontLayout() {
+export default function MainLayout({ children }) {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
   return (
-    <div>
-      <header className="bg-green-600 text-white p-4 flex justify-between">
-        <h1 className="text-xl font-bold">Grocery Store</h1>
-        <nav className="flex gap-4">
-          <Link to="/">Home</Link>
-          <Link to="/shop">Shop</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
-      </header>
+    <>
+      <Header />
+      <main>{children}</main>
 
-      <main className="p-6">
-        <Outlet />
-      </main>
+      {isHomePage && <></>}
 
-      <footer className="bg-gray-900 text-white text-center p-3 mt-10">
-        © 2025 Grocery Store
-      </footer>
-    </div>
+      <Footer />
+    </>
   );
 }
