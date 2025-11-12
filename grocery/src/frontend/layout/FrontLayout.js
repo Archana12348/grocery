@@ -1,19 +1,25 @@
-import { useLocation } from "react-router-dom";
+// 1. Import Outlet from react-router-dom
+import { useLocation, Outlet } from "react-router-dom";
 import Header from "../layout/navbar/Header";
 import Footer from "../layout/navbar/Footer";
 
-export default function MainLayout({ children }) {
+// 2. Remove { children } from the function arguments
+export default function MainLayout() {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <main>{children}</main>
+
+      {/* 3. Replace {children} with <Outlet /> */}
+      <main className="flex-grow">
+        <Outlet />
+      </main>
 
       {isHomePage && <></>}
 
       <Footer />
-    </>
+    </div>
   );
 }
