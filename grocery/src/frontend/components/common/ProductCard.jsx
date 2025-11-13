@@ -29,7 +29,7 @@ const ProductCard = ({ image, name, deliveryTime, size, price }) => {
           <span className="text-sm">₹</span>
           {price}
         </div>
-        <button className="border-2 border-green-600 text-green-600 rounded-lg px-4 py-1 text-sm font-bold hover:bg-green-600 hover:text-white transition-colors">
+        <button className="border-2 bg-[#FF9C00] text-white rounded-lg px-4 py-1 text-sm font-bold hover:bg-white hover:text-[#017D03] transition-colors">
           ADD
         </button>
       </div>

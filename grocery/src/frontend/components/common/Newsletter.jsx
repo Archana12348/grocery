@@ -11,8 +11,8 @@ const Newsletter = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Left Side: Icon + Text */}
           <div className="flex items-center gap-4 w-full md:w-auto">
-            <FiMail className="text-green-400 w-12 h-12 md:w-16 md:h-16 flex-shrink-0" />
-            <h2 className="text-3xl lg:text-4xl font-semibold">
+            <FiMail className="text-[#FF9C00] w-12 h-12 md:w-12 md:h-12 flex-shrink-0" />
+            <h2 className="text-2xl lg:text-2xl font-semibold">
               Sign Up to Get Updates <br /> & News About Us.
             </h2>
           </div>
@@ -26,11 +26,11 @@ const Newsletter = () => {
             <input
               type="email"
               placeholder="Email Address"
-              className="w-full sm:w-[30rem] flex-grow rounded-full border-none bg-gray-700 px-8 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 text-lg"
+              className="w-full sm:w-[30rem] flex-grow rounded-full border-none  px-8 py-4 text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 text-lg"
             />
             <button
               type="submit"
-              className="w-full sm:w-auto rounded-full bg-green-500 px-8 py-4 font-semibold text-white transition-colors hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-green-900 text-lg"
+              className="w-full sm:w-auto rounded-full bg-[#FF9C00] px-8 py-4 font-semibold text-white transition-colors hover:bg-white hover:text-[#017D03] focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-green-900 text-lg"
             >
               SUBSCRIBE
             </button>

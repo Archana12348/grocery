@@ -490,9 +490,9 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-[#017D03] text-white shadow-md font-[Poppins] relative z-50">
+    <header className="bg-[#14532D] text-white shadow-md font-[Poppins] relative z-50">
       {/* 🔹 Top Bar (Desktop) */}
-      <div className="hidden md:flex items-center justify-between px-8 py-5">
+      <div className="hidden md:flex items-center justify-between px-8 py-3">
         {/* Logo */}
         <div className="flex items-center gap-2 text-2xl font-bold text-[#FF9C00]">
           <img src="/hero/hero_1_3.png" alt="Logo" className="w-12 h-12" />
@@ -607,7 +607,8 @@ const Header = () => {
 
       {/* 🔹 Bottom Navigation (Desktop Only) */}
       <nav
-        className="hidden md:flex items-center justify-center relative bg-[#017D03] text-white px-12 py-3"
+        className="hidden md:flex items-center justify-center relative bg-[#14532D] text-white 
+         pb-2"
         onMouseLeave={() => setShowMegaMenu(false)}
       >
         <div className="flex items-center space-x-10 text-lg font-semibold">

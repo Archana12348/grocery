@@ -63,25 +63,25 @@ const Footer = () => {
                 <div className="th-social flex space-x-2 mt-4 justify-center md:justify-start">
                   <a
                     href="https://www.facebook.com/"
-                    className="h-9 w-9 bg-green-700 hover:bg-green-500 text-white rounded-full flex items-center justify-center transition-colors"
+                    className="h-9 w-9 bg-green-700 hover:bg-[#FF9C00] text-white rounded-full flex items-center justify-center transition-colors"
                   >
                     <FaFacebookF />
                   </a>
                   <a
                     href="https://www.twitter.com/"
-                    className="h-9 w-9 bg-green-700 hover:bg-green-500 text-white rounded-full flex items-center justify-center transition-colors"
+                    className="h-9 w-9 bg-green-700 hover:bg-[#FF9C00] text-white rounded-full flex items-center justify-center transition-colors"
                   >
                     <FaTwitter />
                   </a>
                   <a
                     href="https://www.linkedin.com/"
-                    className="h-9 w-9 bg-green-700 hover:bg-green-500 text-white rounded-full flex items-center justify-center transition-colors"
+                    className="h-9 w-9 bg-green-700 hover:bg-[#FF9C00] text-white rounded-full flex items-center justify-center transition-colors"
                   >
                     <FaLinkedinIn />
                   </a>
                   <a
                     href="https://www.whatsapp.com/"
-                    className="h-9 w-9 bg-green-700 hover:bg-green-500 text-white rounded-full flex items-center justify-center transition-colors"
+                    className="h-9 w-9 bg-green-700 hover:bg-[#FF9C00] text-white rounded-full flex items-center justify-center transition-colors"
                   >
                     <FaWhatsapp />
                   </a>
@@ -106,7 +106,7 @@ const Footer = () => {
                     alt="Icon"
                     className="mr-2"
                   />
-                  <span>Quick Links</span>
+                  <span className="hover:text-[#FF9C00]">Quick Links</span>
                 </div>
 
                 {/* 2. The 1/4 Width Underline */}
@@ -118,7 +118,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/about"
-                      className="hover:text-green-500 hover:pl-1 transition-all"
+                      className="hover:text-[#FF9C00] hover:pl-1 transition-all"
                     >
                       <FaLocationArrow className="inline mr-1 text-green-500" />
                       About Us
@@ -127,7 +127,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/project"
-                      className="hover:text-green-500 hover:pl-1 transition-all"
+                      className="hover:text-[#FF9C00] hover:pl-1 transition-all"
                     >
                       <FaLocationArrow className="inline mr-1 text-green-500" />
                       Portfolio
@@ -136,7 +136,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/faq"
-                      className="hover:text-green-500 hover:pl-1 transition-all"
+                      className="hover:text-[#FF9C00] hover:pl-1 transition-all"
                     >
                       <FaLocationArrow className="inline mr-1 text-green-500" />
                       Help & FAQs
@@ -145,7 +145,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/blog"
-                      className="hover:text-green-500 hover:pl-1 transition-all"
+                      className="hover:text-[#FF9C00] hover:pl-1 transition-all"
                     >
                       <FaLocationArrow className="inline mr-1 text-green-500" />
                       Blog
@@ -154,7 +154,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/contact"
-                      className="hover:text-green-500 hover:pl-1 transition-all"
+                      className="hover:text-[#FF9C00] hover:pl-1 transition-all"
                     >
                       <FaLocationArrow className="inline mr-1 text-green-500" />
                       Contact Us
@@ -181,7 +181,7 @@ const Footer = () => {
                     alt="Icon"
                     className="mr-2"
                   />
-                  <span>Contact Us</span>
+                  <span className="hover:text-[#FF9C00]">Contact Us</span>
                 </div>
 
                 {/* 2. The 1/4 Width Underline */}
@@ -194,7 +194,7 @@ const Footer = () => {
                   <div className="info-box_icon text-green-500 mt-1 mr-3">
                     <FaLocationDot />
                   </div>
-                  <p className="info-box_text">
+                  <p className="info-box_text hover:text-[#FF9C00]">
                     8502 Preston Rd. Inglewood, Maine 98380
                   </p>
                 </div>
@@ -205,13 +205,13 @@ const Footer = () => {
                   <p className="info-box_text">
                     <a
                       href="tel:+16326543564"
-                      className="info-box_link block hover:text-green-500"
+                      className="info-box_link block hover:text-[#FF9C00]"
                     >
                       +(163)-2654-3564
                     </a>
                     <a
                       href="tel:+16326545432"
-                      className="info-box_link block hover:text-green-500"
+                      className="info-box_link block hover:text-[#FF9C00]"
                     >
                       +(163)-2654-5432
                     </a>
@@ -224,7 +224,7 @@ const Footer = () => {
                   <p className="info-box_text">
                     <a
                       href="mailto:help24/7@frutin.com"
-                      className="info-box_link hover:text-green-500"
+                      className="info-box_link hover:text-[#FF9C00]"
                     >
                       help24/7@frutin.com
                     </a>
@@ -250,7 +250,7 @@ const Footer = () => {
                     alt="Icon"
                     className="mr-2"
                   />
-                  <span>Instagram</span>
+                  <span className="hover:text-[#FF9C00]">Instagram</span>
                 </div>
 
                 {/* 2. The 1/4 Width Underline */}
@@ -329,7 +329,7 @@ const Footer = () => {
                 Copyright <FaCopyright className="inline" /> 2025
                 <a
                   href="/"
-                  className="font-semibold hover:text-green-500 transition-colors"
+                  className="font-semibold hover:text-[#FF9C00] transition-colors"
                 >
                   {" "}
                   Premier Grocery

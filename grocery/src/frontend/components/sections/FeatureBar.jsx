@@ -28,7 +28,7 @@ const FeatureBar = () => {
           a horizontal row on large screens (lg:flex-row).
           We add a background, shadow, and rounded corners to make it a nice "card".
         */}
-        <div className="feature-list-wrap flex flex-col lg:flex-row justify-between items-center bg-white shadow-md rounded-lg">
+        <div className="feature-list-wrap flex flex-col lg:flex-row justify-between items-center bg-white  shadow-md rounded-lg">
           <FeatureItem
             icon="feature_list_1.svg"
             title="Return Policy"
