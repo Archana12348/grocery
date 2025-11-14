@@ -4,6 +4,7 @@ import BannerSection from "../components/sections/Banner";
 import PaanBanner from "../components/sections/BannerScreen";
 import CategoryGrid from "../components/sections/Category";
 import ProductCarousel from "../components/sections/ProductCarousel";
+import ProductPage from "../components/sections/ProductPage";
 export default function Home() {
   return (
     <>
@@ -13,16 +14,17 @@ export default function Home() {
       <BannerSection /> */}
       {/* <PaanBanner /> */}
       {/* <CategoryGrid /> */}
-      <ProductCarousel
+      {/* <ProductCarousel
         title="Dairy, Bread & Eggs"
         seeAllLink="/category/dairy"
-      />
+      /> */}
 
       {/* You can re-use it for other categories! */}
-      <ProductCarousel
+      {/* <ProductCarousel
         title="Fruits & Vegetables"
         seeAllLink="/category/fruits"
-      />
+      /> */}
+      <ProductPage />
     </>
   );
 }
