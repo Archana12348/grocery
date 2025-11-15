@@ -10,11 +10,9 @@ import {
 } from "react-icons/fa";
 import { FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
 import Newsletter from "../../components/common/Newsletter";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-  {
-    /* FIX: Updated style to include three background images */
-  }
   const footerStyle = {
     // 1. New top-left image (REPLACE THIS PATH)
     // 2. New bottom-right image (REPLACE THIS PATH)
@@ -50,9 +48,9 @@ const Footer = () => {
               {/* FIX: Added flex classes to center logo & social icons on mobile */}
               <div className="th-widget-about flex flex-col items-center md:items-start">
                 <div className="about-logo mb-4">
-                  <a href="/">
+                  <Link to="/">
                     <img src="/logo-footer.svg" alt="Frutin" className="h-10" />
-                  </a>
+                  </Link>
                 </div>
                 <p className="about-text text-sm max-w-xs">
                   We provide specialized winterization services to safeguard
@@ -61,30 +59,30 @@ const Footer = () => {
                 </p>
                 {/* FIX: Added justify-center to center icons on mobile */}
                 <div className="th-social flex space-x-2 mt-4 justify-center md:justify-start">
-                  <a
-                    href="https://www.facebook.com/"
+                  <Link
+                    to="https://www.facebook.com/"
                     className="h-9 w-9 bg-green-700 hover:bg-[#FF9C00] text-white rounded-full flex items-center justify-center transition-colors"
                   >
                     <FaFacebookF />
-                  </a>
-                  <a
-                    href="https://www.twitter.com/"
+                  </Link>
+                  <Link
+                    to="https://www.twitter.com/"
                     className="h-9 w-9 bg-green-700 hover:bg-[#FF9C00] text-white rounded-full flex items-center justify-center transition-colors"
                   >
                     <FaTwitter />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/"
+                  </Link>
+                  <Link
+                    to="https://www.linkedin.com/"
                     className="h-9 w-9 bg-green-700 hover:bg-[#FF9C00] text-white rounded-full flex items-center justify-center transition-colors"
                   >
                     <FaLinkedinIn />
-                  </a>
-                  <a
-                    href="https://www.whatsapp.com/"
+                  </Link>
+                  <Link
+                    to="https://www.whatsapp.com/"
                     className="h-9 w-9 bg-green-700 hover:bg-[#FF9C00] text-white rounded-full flex items-center justify-center transition-colors"
                   >
                     <FaWhatsapp />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -116,49 +114,53 @@ const Footer = () => {
               <div className="menu-all-pages-container">
                 <ul className="menu space-y-2 text-sm">
                   <li>
-                    <a
-                      href="/about"
+                    <Link
+                      to="aboutus"
                       className="hover:text-[#FF9C00] hover:pl-1 transition-all"
                     >
                       <FaLocationArrow className="inline mr-1 text-green-500" />
                       About Us
-                    </a>
+                    </Link>
                   </li>
+
                   <li>
-                    <a
-                      href="/project"
+                    <Link
+                      to="/project"
                       className="hover:text-[#FF9C00] hover:pl-1 transition-all"
                     >
                       <FaLocationArrow className="inline mr-1 text-green-500" />
-                      Portfolio
-                    </a>
+                      Testimonials
+                    </Link>
                   </li>
+
                   <li>
-                    <a
-                      href="/faq"
+                    <Link
+                      to="/faq"
                       className="hover:text-[#FF9C00] hover:pl-1 transition-all"
                     >
                       <FaLocationArrow className="inline mr-1 text-green-500" />
                       Help & FAQs
-                    </a>
+                    </Link>
                   </li>
+
                   <li>
-                    <a
-                      href="/blog"
+                    <Link
+                      to="/blog"
                       className="hover:text-[#FF9C00] hover:pl-1 transition-all"
                     >
                       <FaLocationArrow className="inline mr-1 text-green-500" />
                       Blog
-                    </a>
+                    </Link>
                   </li>
+
                   <li>
-                    <a
-                      href="/contact"
+                    <Link
+                      to="/contact"
                       className="hover:text-[#FF9C00] hover:pl-1 transition-all"
                     >
                       <FaLocationArrow className="inline mr-1 text-green-500" />
                       Contact Us
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -203,18 +205,18 @@ const Footer = () => {
                     <FaPhone />
                   </div>
                   <p className="info-box_text">
-                    <a
-                      href="tel:+16326543564"
+                    <Link
+                      to="tel:+16326543564"
                       className="info-box_link block hover:text-[#FF9C00]"
                     >
                       +(163)-2654-3564
-                    </a>
-                    <a
-                      href="tel:+16326545432"
+                    </Link>
+                    <Link
+                      to="tel:+16326545432"
                       className="info-box_link block hover:text-[#FF9C00]"
                     >
                       +(163)-2654-5432
-                    </a>
+                    </Link>
                   </p>
                 </div>
                 <div className="info-box flex items-start">
@@ -222,12 +224,12 @@ const Footer = () => {
                     <FaEnvelope />
                   </div>
                   <p className="info-box_text">
-                    <a
-                      href="mailto:help24/7@frutin.com"
+                    <Link
+                      to="mailto:help24/7@frutin.com"
                       className="info-box_link hover:text-[#FF9C00]"
                     >
                       help24/7@frutin.com
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </div>
@@ -267,12 +269,12 @@ const Footer = () => {
                     className="rounded"
                   />
                   {/* FIX: Changed 'opacity-0' to 'hidden' and 'group-hover:opacity-100' to 'group-hover:flex' */}
-                  <a
-                    href="/widget/gallery_1_1.jpg"
+                  <Link
+                    to="/widget/gallery_1_1.jpg"
                     className="gallery-btn popup-image absolute inset-0 bg-black bg-opacity-50 hidden items-center justify-center text-white text-2xl group-hover:flex transition-opacity duration-300 rounded"
                   >
                     <FaInstagram />
-                  </a>
+                  </Link>
                 </div>
                 <div className="gallery-thumb relative group">
                   <img
@@ -280,12 +282,12 @@ const Footer = () => {
                     alt="Gallery Image"
                     className="rounded"
                   />
-                  <a
-                    href="/widget/gallery_1_2.jpg"
+                  <Link
+                    to="/widget/gallery_1_2.jpg"
                     className="gallery-btn popup-image absolute inset-0 bg-black bg-opacity-50 hidden items-center justify-center text-white text-2xl group-hover:flex transition-opacity duration-300 rounded"
                   >
                     <FaInstagram />
-                  </a>
+                  </Link>
                 </div>
                 <div className="gallery-thumb relative group">
                   <img
@@ -293,12 +295,12 @@ const Footer = () => {
                     alt="Gallery Image"
                     className="rounded"
                   />
-                  <a
-                    href="/widget/gallery_1_3.jpg"
+                  <Link
+                    to="/widget/gallery_1_3.jpg"
                     className="gallery-btn popup-image absolute inset-0 bg-black bg-opacity-50 hidden items-center justify-center text-white text-2xl group-hover:flex transition-opacity duration-300 rounded"
                   >
                     <FaInstagram />
-                  </a>
+                  </Link>
                 </div>
                 <div className="gallery-thumb relative group">
                   <img
@@ -306,12 +308,12 @@ const Footer = () => {
                     alt="Gallery Image"
                     className="rounded"
                   />
-                  <a
-                    href="/widget/gallery_1_4.jpg"
+                  <Link
+                    to="/widget/gallery_1_4.jpg"
                     className="gallery-btn popup-image absolute inset-0 bg-black bg-opacity-50 hidden items-center justify-center text-white text-2xl group-hover:flex transition-opacity duration-300 rounded"
                   >
                     <FaInstagram />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -327,13 +329,13 @@ const Footer = () => {
             <div className="w-full md:w-auto text-center md:text-left">
               <p className="copyright-text text-sm">
                 Copyright <FaCopyright className="inline" /> 2025
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className="font-semibold hover:text-[#FF9C00] transition-colors"
                 >
                   {" "}
                   Premier Grocery
-                </a>
+                </Link>
                 . All Rights Reserved.
               </p>
             </div>
