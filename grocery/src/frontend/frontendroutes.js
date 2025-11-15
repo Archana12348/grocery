@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Login from "./pages/auth/Login";
 import Signup from "./pages/auth/Signup";
 import AboutUsPage from "./pages/aboutus/AboutUs";
+import ProductPage from "./components/sections/ProductPage";
 
 export const FrontendRoutes = (
   <>
@@ -14,6 +15,7 @@ export const FrontendRoutes = (
       <Route index element={<Home />} />
       <Route path="shop" element={<Shop />} />
       <Route path="aboutus" element={<AboutUsPage />} />
+      <Route path="product" element={<ProductPage />} />
     </Route>
 
     {/* 🔹 LOGIN / SIGNUP OUTSIDE FRONT LAYOUT */}
