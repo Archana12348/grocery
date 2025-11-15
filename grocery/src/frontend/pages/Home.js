@@ -6,16 +6,14 @@ import CategoryGrid from "../components/sections/Category";
 import ProductCarousel from "../components/sections/ProductCarousel";
 import MediaCoverage from "../components/sections/MediaCoverage";
 import WeeklyDeals from "../components/sections/WeeklyDeals";
-import ProductPage from "../components/sections/ProductPage";
-
 export default function Home() {
   return (
     <>
-      <h1 className="text-3xl font-bold">Welcome to Grocery Store 🛒</h1>
-      <FeatureBar />
-      <MarqueText />
+      {/* <h1 className="text-3xl font-bold">Welcome to Grocery Store 🛒</h1> */}
+      <ImageCarousel />
       <BannerSection />
-      <CategoryGrid />
+      <FeatureBar />
+
       <ProductCarousel
         title="Dairy, Bread & Eggs"
         seeAllLink="/category/dairy"
@@ -23,14 +21,10 @@ export default function Home() {
 
       {/* You can re-use it for other categories! */}
       <ProductCarousel
-        title="Fruits & Vegetables"
+        title="Fruits & Vefdgdfgfgetables"
         seeAllLink="/category/fruits"
       />
-      <ImageCarousel />
-      <BannerSection />
-      <FeatureBar />
-      <ProductPage />
-      <ProductCarousel />
+      <MarqueText />
       <WeeklyDeals />
       <MediaCoverage />
     </>
