@@ -7,6 +7,7 @@ import Login from "./pages/auth/Login";
 import Signup from "./pages/auth/Signup";
 import AboutUsPage from "./pages/aboutus/AboutUs";
 import ProductPage from "./components/sections/ProductPage";
+import UserProfile from "./pages/UserProfile/UserProfile";
 
 export const FrontendRoutes = (
   <>
@@ -16,6 +17,7 @@ export const FrontendRoutes = (
       <Route path="shop" element={<Shop />} />
       <Route path="aboutus" element={<AboutUsPage />} />
       <Route path="product" element={<ProductPage />} />
+      <Route path="userprofile" element={<UserProfile />} />
     </Route>
 
     {/* 🔹 LOGIN / SIGNUP OUTSIDE FRONT LAYOUT */}
