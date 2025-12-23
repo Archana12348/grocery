@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* You can re-use it for other categories! */}
       <ProductCarousel
-        title="Fruits & Vefdgdfgfgetables"
+        title="Fruits & Vegetables"
         seeAllLink="/category/fruits"
       />
       <MarqueText />
