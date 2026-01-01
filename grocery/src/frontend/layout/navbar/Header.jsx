@@ -181,7 +181,7 @@ const Header = () => {
          pb-2"
         onMouseLeave={() => setShowMegaMenu(false)}
       >
-        <div className="flex items-center space-x-10 text-lg font-semibold">
+        <div className="flex items-center space-x-10 text-lg ">
           <Link to="/" className="hover:text-[#FF9C00]">
             Home
           </Link>
